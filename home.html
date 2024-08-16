@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Development Club</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="yearplan.html">YEAR PLAN</a></li>
+            <li><a href="#">HISTORY</a></li>
+            <li><a href="#">OUR TEAM</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <header id="home" class="banners">
+        <div class="container-banner">
+            <div class="text-area">
+                <h3>Kongu Engineering College</h3>
+                <h1>Self Development Club</h1>
+                <h2>
+                    <a href="./snt/snt.html" target="_blank" class="hero-btn"><b>Register</b></a>
+                    <marquee width="50%" scrollamount="15" style="color:aliceblue">
+                        Click Here to Register for the <span style="color: #ff0066;">SKILLS 'N' THRILLS SEASON 5!</span>
+                    </marquee>
+                </h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-sdc">
+        <div class="club-wrapper">
+            <div class="club">
+                <div class="clublogo">
+                    <img src="https://sdc.kongu.edu/images/blue.png" alt="Logo">
+                </div>
+                <div class="naming">
+                    <h2>SDC Club</h2>
+                    <p>Self Development Club of KEC, Erode is one of the pioneer clubs of the institution 
+                      that explores and brings forth the gems of talents lying unbeknownst to the world. The soul motto of the club is to <b>BELIEVE IN YOURSELF</b> :)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="banner">
+            <div class="slider" style="--quantity: 10">
+                <div class="item" style="--position: 1"><img src="C:\Users\deepi\OneDrive\Desktop\website\DSC00627.jpg" alt=""></div>
+                <div class="item" style="--position: 2"><img src="C:\Users\deepi\OneDrive\Desktop\website\DSC00675.jpg" alt=""></div>
+                <div class="item" style="--position: 3"><img src="C:\Users\deepi\OneDrive\Desktop\website\IMG_2554.jpg" alt=""></div>
+                <div class="item" style="--position: 4"><img src="C:\Users\deepi\OneDrive\Desktop\website\IMG_2449.jpg" alt=""></div>
+                <div class="item" style="--position: 5"><img src="C:\Users\deepi\OneDrive\Desktop\website\IMG_3769.jpg" alt=""></div>
+                <div class="item" style="--position: 6"><img src="C:\Users\deepi\OneDrive\Desktop\website\DSC00955.jpg" alt=""></div>
+                <div class="item" style="--position: 7"><img src="C:\Users\deepi\OneDrive\Desktop\website\IMG_2552.jpg" alt=""></div>
+                <div class="item" style="--position: 8"><img src="C:\Users\deepi\OneDrive\Desktop\website\DSC03701.jpg" alt=""></div>
+                <div class="item" style="--position: 9"><img src="C:\Users\deepi\OneDrive\Desktop\website\DSC01279.jpg" alt=""></div>
+                <div class="item" style="--position: 10"><img src="C:\Users\deepi\OneDrive\Desktop\website\IMG_3768.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Self Development Club. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
