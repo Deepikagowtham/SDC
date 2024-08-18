@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2e364a;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: rgba(51, 51, 51, 0.8); /* Slight transparency */
+  padding: 1rem;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+  margin-left: -32px;
+}
+
+.container {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  animation: movedown 1s linear forwards;
+  opacity: 0;
+}
+
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.container:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.container:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.container:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.container:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.container:nth-child(5) {
+  animation-delay: 4s;
+}
+
+.container:nth-child(6) {
+  animation-delay: 5s;
+}
+
+.textbox {
+  padding: 20px 30px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 80px;
+  font-size: 15px;
+}
+h1{
+  font-family: "Sofia", sans-serif;
+  text-align: center;
+  color: #f1f1f1;
+  margin-top: 10px;
+}
+.left-container {
+  left: 0;
+}
+
+.right-container {
+  left: calc(50% + 140px); /* Increase this value to match the margin-right of the left container */
+}
+
+.container img {
+  position: absolute;
+  width: 180px; /* Adjusted size */
+  height: 180px; /* Adjusted size to maintain aspect ratio */
+  border-radius: 50%;
+  right: -160px; /* Adjusted to center the image if necessary */
+  top: -20px;
+  z-index: 10;
+}
+
+.right-container img {
+  left: -250px; /* Adjusted to center the image if necessary */
+}
+
+.last-container {
+  margin-top: 0px; /* Adjust this value as needed */
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background: #fff;
+  top: 0;
+  left: calc(50% + 50px); /* Adjust if necessary to align with the center of the containers */
+  margin-left: -3px;
+  z-index: -1;
+  height: 1800px; /* Set the exact height to match the last container's position */
+}
+
+
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.textbox h2 {
+  font-weight: 600;
+}
+
+.textbox small {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.left-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid rgb(255, 255, 255);
+  right: -15px;
+}
+
+.right-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid rgb(255, 255, 255);
+  left: -15px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline {
+    margin: 50px auto;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+
+  .textbox {
+    font-size: 13px;
+  }
+
+  .textbox small {
+    margin-bottom: 10px;
+  }
+
+  .right-container {
+    left: 0;
+  }
+
+  .left-container img, .right-container img {
+    left: 10px;
+  }
+
+  .left-container-arrow, .right-container-arrow {
+    border-right: 15px solid #fff;
+    border-left: 0;
+    left: -15px;
+  }
+}
+
+/* Card Flip Effect */
+.card {
+  cursor: pointer;
+  width: 340px;
+  height: 480px;
+  position: relative;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 30px;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+
+.front img {
+  height: 100%;
+  width: 100%;
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  background: #f1f1f1;
+  transform: rotateY(180deg);
+}
+
+.card:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+
+.card.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card{
+  margin-top: 40px;
+}
+/* Container to hold all the cards */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+/* Card Flip Effect */
+.card {
+  cursor: pointer;
+  width: 300px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  position: relative;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front img, .back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will ensure the image covers the entire card without distorting */
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.card:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+
+.container img {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  right: -130px; /* Adjusted to slightly overlap the previous image */
+  top: -20px;
+  z-index: 10;
+}
+
+.right-container img {
+  left: -130px; /* Adjusted to slightly overlap the previous image */
+}
+
+/* Optional: Adjust the size of the images if necessary */
+.container img,
+.right-container img {
+  width: 160px;  /* Adjust the size as needed */
+  height: 160px; /* Adjust the size as needed */
+}
+
+.glow {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #006be6, 0 0 40px #5100e6, 0 0 50px #0023e6, 0 0 60px #0023e6, 0 0 70px #0023e6;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #4d94ff, 0 0 40px #4d94ff, 0 0 50px #4d94ff, 0 0 60px #4d94ff, 0 0 70px #4d94ff, 0 0 80px #4d94ff;
+  }
+}
