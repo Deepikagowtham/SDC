@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Self Development Club</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="Home/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="Home/nav.css">
     <style>
         
         *{
@@ -47,15 +49,76 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul class="navbar-menu">
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="yearplan.html">YEAR PLAN</a></li>
-            <li><a href="#">HISTORY</a></li>
-            <li><a href="#">OUR TEAM</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
-    </nav>
+    <nav class="nav container">
+
+        <div class="nav__menu" id="nav-menu">
+           <ul class="nav__list">
+              <li class="nav__item">
+                 <a href="home.html" class="nav__link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>Home</span>
+                 </a>
+              </li>
+
+              <li class="nav__item">
+                 <a href="yearplan.html" class="nav__link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>YearPlan</span>
+                 </a>
+              </li>
+
+              <li class="nav__item">
+                 <a href="History.html" class="nav__link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>History</span>
+                 </a>
+              </li>
+
+              <li class="nav__item">
+                 <a href="ourteam.html" class="nav__link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>Our Team</span>
+                 </a>
+              </li>
+
+              <li class="nav__item">
+                 <a href="contact.html" class="nav__link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>Contact</span>
+                 </a>
+              </li>
+           </ul>
+
+           <!-- Close button
+           <div class="nav__close" id="nav-close">
+              <i class="ri-close-large-line"></i>
+           </div>
+
+           <div class="nav__social">
+              <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                 <i class="ri-instagram-line"></i>
+              </a>
+
+              <a href="https://github.com/" target="_blank" class="nav__social-link">
+                 <i class="ri-github-line"></i>
+              </a>
+
+              <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
+                 <i class="ri-dribbble-line"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link">
+                 <i class="ri-linkedin-box-line"></i>
+              </a>
+           </div>
+        </div>-->
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+           <i class="ri-menu-line"></i>
+        </div>
+     </nav>
+
 
     <!-- Main Content -->
     <header id="home" class="banners">
@@ -93,16 +156,16 @@
     <section class="hero">
         <div class="banner">
             <div class="slider" style="--quantity: 10">
-                <div class="item" style="--position: 1"><img src="C:\Users\deepi\OneDrive\Desktop\website\DSC00627.jpg" alt=""></div>
-                <div class="item" style="--position: 2"><img src="C:\Users\deepi\OneDrive\Desktop\website\DSC00675.jpg" alt=""></div>
-                <div class="item" style="--position: 3"><img src="C:\Users\deepi\OneDrive\Desktop\website\IMG_2554.jpg" alt=""></div>
-                <div class="item" style="--position: 4"><img src="C:\Users\deepi\OneDrive\Desktop\website\IMG_2449.jpg" alt=""></div>
-                <div class="item" style="--position: 5"><img src="C:\Users\deepi\OneDrive\Desktop\website\IMG_3769.jpg" alt=""></div>
-                <div class="item" style="--position: 6"><img src="C:\Users\deepi\OneDrive\Desktop\website\DSC00955.jpg" alt=""></div>
-                <div class="item" style="--position: 7"><img src="C:\Users\deepi\OneDrive\Desktop\website\IMG_2552.jpg" alt=""></div>
-                <div class="item" style="--position: 8"><img src="C:\Users\deepi\OneDrive\Desktop\website\DSC03701.jpg" alt=""></div>
-                <div class="item" style="--position: 9"><img src="C:\Users\deepi\OneDrive\Desktop\website\DSC01279.jpg" alt=""></div>
-                <div class="item" style="--position: 10"><img src="C:\Users\deepi\OneDrive\Desktop\website\IMG_3768.jpg" alt=""></div>
+                <div class="item" style="--position: 1"><img src="C:\Users\deepi\OneDrive\Desktop\website\Images\DSC00627.jpg" alt=""></div>
+                <div class="item" style="--position: 2"><img src="C:\Users\deepi\OneDrive\Desktop\website\Images\DSC00675.jpg" alt=""></div>
+                <div class="item" style="--position: 3"><img src="C:\Users\deepi\OneDrive\Desktop\website\Images\IMG_2554.jpg" alt=""></div>
+                <div class="item" style="--position: 4"><img src="C:\Users\deepi\OneDrive\Desktop\website\Images\IMG_2449.jpg" alt=""></div>
+                <div class="item" style="--position: 5"><img src="C:\Users\deepi\OneDrive\Desktop\website\Images\IMG_3769.jpg" alt=""></div>
+                <div class="item" style="--position: 6"><img src="C:\Users\deepi\OneDrive\Desktop\website\Images\DSC00955.jpg" alt=""></div>
+                <div class="item" style="--position: 7"><img src="C:\Users\deepi\OneDrive\Desktop\website\Images\IMG_2552.jpg" alt=""></div>
+                <div class="item" style="--position: 8"><img src="C:\Users\deepi\OneDrive\Desktop\website\Images\DSC03701.jpg" alt=""></div>
+                <div class="item" style="--position: 9"><img src="C:\Users\deepi\OneDrive\Desktop\website\Images\DSC01279.jpg" alt=""></div>
+                <div class="item" style="--position: 10"><img src="C:\Users\deepi\OneDrive\Desktop\website\Images\IMG_3768.jpg" alt=""></div>
             </div>
         </div>
     </section>
@@ -111,6 +174,7 @@
     <footer class="footer">
         <p>&copy; 2024 Self Development Club. All rights reserved.</p>
     </footer>
+    <script src="Home/main.js"></script>
 </body>
 
 </html>
