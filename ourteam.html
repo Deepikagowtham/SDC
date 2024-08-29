@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js">
+    <link rel="stylesheet" href="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\ourteam.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\styles.css">
+    <link rel="stylesheet" href="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\nav.css">
+    <link rel="stylesheet" href="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\jquery.flipster.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Poppins;
+        }
+        .home-container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0c52a1;
+        }
+        .profile-card{
+            position: relative;
+            width: 220px;
+            height: 220px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 50%;
+            box-shadow: -5px 8px 45px rgba(51, 51, 51, 0.126);
+            transition: all .4s;
+            margin: 0 20px;
+        }
+        .profile-card:hover{
+            border-radius: 10px;
+            height: 260px;
+        }
+        .profile-card .img{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .profile-card:hover img{
+            border-radius: 10px;
+            transform: translateY(-70px);
+        }
+        .img img{
+            object-fit: fill;
+            width: 100%;
+            border-radius: 50%;
+            transition: all .4s;
+            z-index: 99;
+        }
+        .caption{
+            text-align: center;
+            transform: translateY(-90px);
+            opacity: 0;
+            pointer-events: none;
+            transition: all .5s;
+        }
+        .profile-card:hover .caption{
+            opacity: 1;
+            pointer-events: all;
+        }
+        .caption h3{
+            font-size: 21px;
+            color: #0c52a1;
+            font-weight: 600;
+        }
+        .caption p{
+            font-size: 15px;
+            font-weight: 500;
+            margin: 2px 0 12px 0;
+        }
+        .caption .social-links i{
+            font-size: 21px;
+            margin: 0 3px;
+            cursor: pointer;
+            color: #333;
+            transition: all .4s;
+        }
+        .caption .social-links i:hover{
+            color: #0c52a1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Our Team Section -->
+    <div class="wrapper">
+        <div class="title">
+            <!-- Navigation Bar -->
+    <nav class="nav container">
+        <div class="nav__menu" id="nav-menu">
+           <ul class="nav__list">
+              <li class="nav__item">
+                 <a href="home.html" class="nav__link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>Home</span>
+                 </a>
+              </li>
+              <li class="nav__item">
+                 <a href="yearplan.html" class="nav__link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>YearPlan</span>
+                 </a>
+              </li>
+              <li class="nav__item">
+                 <a href="history.html" class="nav__link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>History</span>
+                 </a>
+              </li>
+              <li class="nav__item">
+                 <a href="ourteam.html" class="nav__link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>Our Team</span>
+                 </a>
+              </li>
+              <li class="nav__item">
+                 <a href="contact.html" class="nav__link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>Contact</span>
+                 </a>
+              </li>
+           </ul>
+        </div>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+           <i class="ri-menu-line"></i>
+        </div>
+    </nav>
+            <h4>CAPTAINS OF THE SHIP</h4>
+        </div>
+
+        <div class="card_Container">
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\1.PRAKASH SIR.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Dr.N.Prakash<br><span>Assistant Professor, MBA</span></h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\KavithaMam.jpeg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Dr.S.Kavitha Bharathi<br><span>Associate professor, CT-UG</span></h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    <!---->
+    <div class="home-container">
+        <h2>PILLARS  OF  STRENGTH</h2>
+        <div class="profile-card">
+            <div class="img">
+                <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\3.DEVAPRAKASH S.JPG">
+            </div>
+            <div class="caption">
+                <h3>S.Devaprakash</h3>
+                <p>Secretary<br>(MECH)</p>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\4.KAVYA S.jpg">
+            </div>
+            <div class="caption">
+                <h3>S.Kavya</h3>
+                <p>Additional Secretary<br>(CSE)</p>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\5.RAM AKAASHU B.JPG">
+            </div>
+            <div class="caption">
+                <h3>B.Ramaakashu</h3>
+                <p>Treasurer<br>(CSE)</p>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\6.SANJAY B.JPG">
+            </div>
+            <div class="caption">
+                <h3>B.Sanjay</h3>
+                <p>Additional Treasurer<br>(CSE)</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="gallery">
+        <h1>SOLDIERS  OF  FORTUNE</h1>
+        <div class="hero">
+            <div class="carousel">
+                <ul>
+                    <li>
+                        <div class="image-container">
+                            <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\7.KAVIN KUMAR R.jpg" alt="img">
+                            <div class="caption">
+                                <h3>Kavin Kumar R</h3>
+                                <p>Description of Event 1</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image-container">
+                            <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\8.JAIAAKASH AR.JPG" alt="img">
+                            <div class="caption">
+                                <h3>Event 2</h3>
+                                <p>Description of Event 2</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image-container">
+                            <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\9.SARAN.JPG" alt="img">
+                            <div class="caption">
+                                <h3>Event 3</h3>
+                                <p>Description of Event 3</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image-container">
+                            <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\10.DHINUVARSHA M.jpeg" alt="img">
+                            <div class="caption">
+                                <h3>Event 3</h3>
+                                <p>Description of Event 3</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image-container">
+                            <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\11.THANYA R G.jpg" alt="img">
+                            <div class="caption">
+                                <h3>Event 3</h3>
+                                <p>Description of Event 3</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image-container">
+                            <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\12.THEEBASEHARAN M S.JPG" alt="img">
+                            <div class="caption">
+                                <h3>Event 3</h3>
+                                <p>Description of Event 3</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image-container">
+                            <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\13.THANIYAARRSHINII S.jpg" alt="img">
+                            <div class="caption">
+                                <h3>Event 3</h3>
+                                <p>Description of Event 3</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image-container">
+                            <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\14.SUBITH J.jpg" alt="img">
+                            <div class="caption">
+                                <h3>Event 3</h3>
+                                <p>Description of Event 3</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image-container">
+                            <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\15.GOKULAN.jpg" alt="img">
+                            <div class="caption">
+                                <h3>Event 3</h3>
+                                <p>Description of Event 3</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image-container">
+                            <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\16.VARSHAA J.jpeg" alt="img">
+                            <div class="caption">
+                                <h3>Event 3</h3>
+                                <p>Description of Event 3</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image-container">
+                            <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\17.KANIGA.JPG" alt="img">
+                            <div class="caption">
+                                <h3>Event 3</h3>
+                                <p>Description of Event 3</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image-container">
+                            <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\18.Sujith.JPG" alt="img">
+                            <div class="caption">
+                                <h3>Event 3</h3>
+                                <p>Description of Event 3</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image-container">
+                            <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\19.ABARNA S.jpg" alt="img">
+                            <div class="caption">
+                                <h3>Event 3</h3>
+                                <p>Description of Event 3</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image-container">
+                            <img src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\images\20.DHARANESH R.jpg" alt="img">
+                            <div class="caption">
+                                <h3>Event 3</h3>
+                                <p>Description of Event 3</p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Add more images and captions as needed -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+    </div>
+    <!-- carousal :: script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="C:\Users\deepi\OneDrive\Desktop\website\OurTeam\jquery.flipster.min.js"></script>
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing: -0.3,
+        });
+    </script>
+    <!-- carousal :: script end -->
+    
+</body>
+</html>
